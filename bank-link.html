@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+    <header class="py-2 shadow shadow bg-light" >
+        <div class="container d-flex justify-content-between align-items-center h-100 ">
+
+            <div class="d-flex h-100 align-items-center">
+                <a href="/index" class="h-100 menu-large">
+                    <img class="h-100" src="assets/photo/logo.png">
+                </a>
+
+
+
+
+                <div class="menu-large">
+
+                   <div class="d-flex">
+                    <ul class="nav custom-menu" style="font-size: 14px;">
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu-item "><a href="/index.html"
+                                class="text-decoration-none action-menu">Trang chủ</a></li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu-item "><a href="intro.html"
+                                class="text-decoration-none action-menu">Giối thiệu</a></li>
+                        <li class="nav-item px-3 custom-nav-item  menu-hover action-menu-item">
+                            <a class="custom-nav-link text-uppercase fw-bold text-decoration-none nav-item-text-danger action-menu"
+                                href="/service.html">Dịch vụ</a>
+                            <ul class="custom-submenu ">
+                                <li class="li-custom-submenu-link"><a class="custom-submenu-link  " href="#">Dịch vụ vận
+                                        chuyển hàng từ Úc về
+                                        Việt Nam</a></li>
+                                <li class="li-custom-submenu-link"><a class="custom-submenu-link  " href="#">Dịch vụ
+                                        Drop Ship hàng từ Úc về
+                                        Việt Nam</a></li>
+                                <li class="li-custom-submenu-link"><a class="custom-submenu-link  " href="#">Dịch vụ
+                                        Order hàng úc chính hãng
+                                        giá tốt</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu action-menu-item"><a href="/news.html"
+                                class="text-decoration-none action-menu">Tin tức</a></li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu action-menu-item"><a href="/order.html"
+                                class="text-decoration-none action-menu">Hàng order</a></li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu action-menu-item"><a href="/tracking.html"
+                                class="text-decoration-none action-menu">TRacking</a></li>
+                    </ul>
+                   </div>
+
+                </div>
+            </div>
+            <div class="search-large ">
+                <div class="d-flex">
+                    <input type="search" class="form-control rounded-0" placeholder="Tìm kiếm sản phẩm ...">
+                    <button class="btn btn-danger rounded-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="container menu-medium bg-light">
+
+            <div class="d-flex justify-content-between" style="height: 50px;">
+                <a href="/index" class="flex h-100">
+                    <img class=" h-100" src="assets/photo/logo2.png">
+                </a>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                </div>
+
+            </div>
+
+            
+
+            <div class="accordion accordion-flush bg-light" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header d-flex align-items-center justify-content-between bg-light">
+                        <a class="fs-6 text-dark text-decoration-none text-uppercase" href="#">Trang chủ</a>
+                        <button class="  collapsed custom-accordion border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fa-solid fa-bars" style="font-size: 16px;"></i>
+                          </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <ul class="list-group list-group-flush text-uppercase fw-semibold" style="font-size: 12px;">
+                            <li class="list-group-item"><a href="/index.html" class="text-dark text-decoration-none ">Trang chủ</a></li>
+                            <li class="list-group-item"><a href="/intro.html" class="text-dark text-decoration-none">Giới thiệu</a></li>
+                            <li class="list-group-item">
+                                
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <div class="accordion-header d-flex justify-content-between">
+                                        <a class="w-100 text-decoration-none text-dark" href="service.html">Dịch vụ</a>
+                                        <button class="accordion-button collapsed p-0 w-auto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          
+                                        </button>
+                                      </div>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item border-0 fw-normal">
+                                                <a href="#" class="text-dark text-decoration-none">chuyển hàng từ Úc về
+                                                    Việt Nam</a>
+                                            </li>
+                                            <li class="list-group-item border-0 fw-normal">
+                                                <a href="#" class="text-dark text-decoration-none"> Drop Ship hàng từ Úc về
+                                                    Việt Nam</a>
+                                            </li>
+                                            <li class="list-group-item border-0 fw-normal">
+                                                <a href="#" class="text-dark text-decoration-none">Order hàng úc chính hãng
+                                                    giá tốt</a>
+                                            </li>
+                                            
+                                          </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                            </li>
+                            <li class="list-group-item"><a href="/news.html" class="text-dark text-decoration-none">Tin tức</a></li>
+                            <li class="list-group-item"><a href="/order.html" class="text-dark text-decoration-none">hàng order</a></li>
+                            <li class="list-group-item"><a href="/tracking.html" class="text-dark text-decoration-none">tracking</a></li>
+
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                
+               
+              </div>
+        </div>
+        
+        </div>
+    </header>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="d-flex">
+                    <input type="search" class="form-control rounded-0" placeholder="Tìm kiếm sản phẩm ...">
+                    <button class="btn btn-danger rounded-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+    <section class="menu-bottom bg-light ">
+        <div class="">
+            <div class="row">
+                <a href="/index.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-house fs-6"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <a href="product.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-truck-fast fs-6"></i>
+                    <span>Nhập hàng</span>
+                </a>
+                <a href="/room.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-circle-plus fs-6"></i>
+                    <span>Xuất hàng</span>
+                </a>
+                <a href="account.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-circle-user fs-6"></i>
+                    <span>Tài khoản</span>
+                </a>    
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="d-flex">
+                    <input type="search" class="form-control rounded-0" placeholder="Tìm kiếm sản phẩm ...">
+                    <button class="btn btn-danger rounded-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+    <section class="menu-bottom bg-light ">
+        <div class="">
+            <div class="row">
+                <a href="/index.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-house fs-6"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <a href="product.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-truck-fast fs-6"></i>
+                    <span>Nhập hàng</span>
+                </a>
+                <a href="/room.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-circle-plus fs-6"></i>
+                    <span>Xuất hàng</span>
+                </a>
+                <a href="account.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-circle-user fs-6"></i>
+                    <span>Tài khoản</span>
+                </a>    
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mt-3">
+        <div class="container custom-container">
+            <div class="card">
+                <div class="card-header bg-transparent-light border-light-subtle">
+                    <h6>Liên kết tài khoản ngân hàng</h6>
+                </div>
+                <div class="card-body">
+                   <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Tên ngân hàng</label>
+                        <input type="text" class="form-control"  aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Số tài khoản</label>
+                        <input type="text" class="form-control"  aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Chủ tài khoản</label>
+                        <input type="text" class="form-control"  aria-describedby="emailHelp">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100">Liên kết ngay</button>
+                      
+                   </form>
+                </div>
+            </div>
+        </div>
+   </section>
+
+
+    
+    <footer class="mt-3 bg-danger">
+        <div class="container">
+            <div class="row py-4 text-light">
+                <div class="col-12 col-md-4 P-2">
+                    <div class="border-bottom border-light pb-3 mb-3">
+                        <h6>VÀI DÒNG GIỚI THIỆU</h6>
+                    </div>
+                    <span>
+                        <a class="text-light text-decoration-none fw-semibold " href="#">vnshirogane.com </a> chuyên cung cấp dịch vụ Order hàng Úc và dịch vụ vận chuyển hàng hóa qua các nước như Mỹ, Đức,Pháp,Hungary, Việt Nam . Dịch vụ của chúng tôi giúp khách hàng tại Mỹ, Đức,Pháp,Hungary, Việt Nam nhanh chóng tiếp cận nguồn hàng hóa chất lượng cao từ Úc và mua hàng, vận chuyển về Việt Nam. Chúng tôi khát khao mong muốn được đồng hành cùng bạn chinh phục thị trường thế giới
+                    </span>
+                </div>
+
+                <div class="col-12 col-md-4 P-2">
+                    <div class="border-bottom border-light pb-3 mb-3">
+                        <h6>THÔNG TIN LIÊN HỆ</h6>
+                    </div>
+                    <p>
+                        <span><i class="fa-solid fa-house"></i></span>
+                    <span> Lô 03, Ngõ 222 Thanh Am, Thượng Thanh, Long Biên, Hà Nội</span>
+                    </p>
+
+                    <p>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                    <span>(+84)966.735.678</span>
+                    </p>
+
+                    <p>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                    <span> Shirogane245@gmail.com</span>
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 P-2">
+                    <div class="border-bottom border-light pb-3 mb-3">
+                        <h6>FANPAGE</h6>
+                    </div>
+                    <div class="fb-page" data-href="https://www.facebook.com/vnshirogane/?ref=embed_page" data-tabs="timeline" data-width="" data-height="120" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/vnshirogane/?ref=embed_page" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/vnshirogane/?ref=embed_page">Shirogane Express - Dịch vụ vận chuyển hàng hóa từ Úc về Việt Nam</a></blockquote></div>
+                </div>
+
+                <div class="col-12 text-center mb-5">
+                    <a class="p-2 text-light text-decoration-none fw-semibold " style="font-size: 18px;" href="#">Chính sách đền bù </a>
+                    <a class="p-2 text-light text-decoration-none fw-semibold " style="font-size: 18px;" href="#">Quy định chung </a>
+                    <a class="p-2 text-light text-decoration-none fw-semibold " style="font-size: 18px;" href="#">Hàng hóa cấm vận chuyển </a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v21.0&appId=3171742013152251"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

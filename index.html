@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+    <header class="py-2 shadow shadow bg-light" >
+        <div class="container d-flex justify-content-between align-items-center h-100 ">
+
+            <div class="d-flex h-100 align-items-center">
+                <a href="/index" class="h-100 menu-large">
+                    <img class="h-100" src="assets/photo/logo.png">
+                </a>
+
+
+
+
+                <div class="menu-large">
+
+                   <div class="d-flex">
+                    <ul class="nav custom-menu" style="font-size: 14px;">
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu-item "><a href="/index.html"
+                                class="text-decoration-none action-menu">Trang chủ</a></li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu-item "><a href="intro.html"
+                                class="text-decoration-none action-menu">Giối thiệu</a></li>
+                        <li class="nav-item px-3 custom-nav-item  menu-hover action-menu-item">
+                            <a class="custom-nav-link text-uppercase fw-bold text-decoration-none nav-item-text-danger action-menu"
+                                href="/service.html">Dịch vụ</a>
+                            <ul class="custom-submenu ">
+                                <li class="li-custom-submenu-link"><a class="custom-submenu-link  " href="#">Dịch vụ vận
+                                        chuyển hàng từ Úc về
+                                        Việt Nam</a></li>
+                                <li class="li-custom-submenu-link"><a class="custom-submenu-link  " href="#">Dịch vụ
+                                        Drop Ship hàng từ Úc về
+                                        Việt Nam</a></li>
+                                <li class="li-custom-submenu-link"><a class="custom-submenu-link  " href="#">Dịch vụ
+                                        Order hàng úc chính hãng
+                                        giá tốt</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu action-menu-item"><a href="/news.html"
+                                class="text-decoration-none action-menu">Tin tức</a></li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu action-menu-item"><a href="/order.html"
+                                class="text-decoration-none action-menu">Hàng order</a></li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu action-menu-item"><a href="/tracking.html"
+                                class="text-decoration-none action-menu">TRacking</a></li>
+                    </ul>
+                   </div>
+
+                </div>
+            </div>
+            <div class="search-large ">
+                <div class="d-flex">
+                    <input type="search" class="form-control rounded-0" placeholder="Tìm kiếm sản phẩm ...">
+                    <button class="btn btn-danger rounded-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="container menu-medium bg-light">
+
+            <div class="d-flex justify-content-between" style="height: 50px;">
+                <a href="/index" class="flex h-100">
+                    <img class=" h-100" src="assets/photo/logo2.png">
+                </a>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                </div>
+
+            </div>
+
+            
+
+            <div class="accordion accordion-flush bg-light" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header d-flex align-items-center justify-content-between bg-light">
+                        <a class="fs-6 text-dark text-decoration-none text-uppercase" href="#">Trang chủ</a>
+                        <button class="  collapsed custom-accordion border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fa-solid fa-bars" style="font-size: 16px;"></i>
+                          </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <ul class="list-group list-group-flush text-uppercase fw-semibold" style="font-size: 12px;">
+                            <li class="list-group-item"><a href="/index.html" class="text-dark text-decoration-none ">Trang chủ</a></li>
+                            <li class="list-group-item"><a href="/intro.html" class="text-dark text-decoration-none">Giới thiệu</a></li>
+                            <li class="list-group-item">
+                                
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <div class="accordion-header d-flex justify-content-between">
+                                        <a class="w-100 text-decoration-none text-dark" href="service.html">Dịch vụ</a>
+                                        <button class="accordion-button collapsed p-0 w-auto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          
+                                        </button>
+                                      </div>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item border-0 fw-normal">
+                                                <a href="#" class="text-dark text-decoration-none">chuyển hàng từ Úc về
+                                                    Việt Nam</a>
+                                            </li>
+                                            <li class="list-group-item border-0 fw-normal">
+                                                <a href="#" class="text-dark text-decoration-none"> Drop Ship hàng từ Úc về
+                                                    Việt Nam</a>
+                                            </li>
+                                            <li class="list-group-item border-0 fw-normal">
+                                                <a href="#" class="text-dark text-decoration-none">Order hàng úc chính hãng
+                                                    giá tốt</a>
+                                            </li>
+                                            
+                                          </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                            </li>
+                            <li class="list-group-item"><a href="/news.html" class="text-dark text-decoration-none">Tin tức</a></li>
+                            <li class="list-group-item"><a href="/order.html" class="text-dark text-decoration-none">hàng order</a></li>
+                            <li class="list-group-item"><a href="/tracking.html" class="text-dark text-decoration-none">tracking</a></li>
+
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                
+               
+              </div>
+        </div>
+        
+        </div>
+    </header>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="d-flex">
+                    <input type="search" class="form-control rounded-0" placeholder="Tìm kiếm sản phẩm ...">
+                    <button class="btn btn-danger rounded-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+    <section class="menu-bottom bg-light ">
+        <div class="">
+            <div class="row">
+                <a href="/index.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-house fs-6"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <a href="product.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-truck-fast fs-6"></i>
+                    <span>Nhập hàng</span>
+                </a>
+                <a href="/room.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-circle-plus fs-6"></i>
+                    <span>Xuất hàng</span>
+                </a>
+                <a href="/account.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-circle-user fs-6"></i>
+                    <span>Tài khoản</span>
+                </a>    
+            </div>
+        </div>
+    </section>
+
+    <section style="z-index: 1;">
+
+        <div id="carouselExampleIndicators" class="carousel slide shadow">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.pinimg.com/originals/55/50/60/55506024244c5d9902bb13261396b7b5.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/6f/8b/49/6f8b49ef652373a66c9b6cdf8c257bce.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2uyM2oHut4N0Dd5QOaXYBtvX8UWn2OxdRqrn9QkL7UtzJ-kssM39Mggj59FCyipPag&usqp=CAU"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="py-4 bg-home-main ">
+            <div class="container text-center">
+                <div id="carouselExampleIndicators1" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+
+                    </div>
+                    <div class="carousel-inner pb-5 text-light">
+                        <div class="carousel-item active">
+                            <h2>DỊCH VỤ CỦA CHÚNG TÔI</h2>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>BẠN TRAO TÔI NIỀM TIN CHÚNG TÔI TRAO BẠN SỰ HÀI LÒNG!</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="p-2 text-center">
+                        <a href="#" class="w-100 d-flex" style="height: 250px;">
+                            <img style="width: 100%; height: 100%; object-fit: cover;" src="assets/photo/dv-1.jpg">
+                        </a>
+                        <a href="#" class="fw-bold text-decoration-none text-dark">
+                            <span class="pt-2 d-block"> Dịch vụ vận chuyển hàng từ úc về Việt Nam</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="p-2 text-center">
+                        <a href="#" class="w-100 d-flex" style="height: 250px;">
+                            <img style="width: 100%; height: 100%; object-fit: cover;" src="assets/photo/dv-2.jpg">
+                        </a>
+                        <a href="#" class="fw-bold text-decoration-none text-dark">
+                            <span class="pt-2 d-block"> Dịch vụ vận chuyển hàng từ úc về Việt Nam</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="p-2 text-center ">
+                        <a href="#" class="w-100 d-flex" style="height: 250px;">
+                            <img style="width: 100%; height: 100%; object-fit: cover;" src="assets/photo/dv-3.jpg">
+                        </a>
+                        <a href="#" class="fw-bold text-decoration-none text-dark">
+                            <span class="pt-2 d-block"> Dịch vụ vận chuyển hàng từ úc về Việt Nam</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mt-3 bg-home-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 p-3 py-4">
+                    <div class="rounded bg-transparent-light p-3 ">
+                        <h2 class="text-yellow ff-sans-serif text-center">Chất lượng và uy tín hàng đầu </h2>
+                        <h2 class="text-yellow ff-sans-serif text-center">Nhân giá trị cộng niềm tin</h2>
+                        <span class="py-2 d-block"><a href="#"
+                                class="text-decoration-none text-dark fw-semibold">vnshirogane.com</a> à thành viên của
+                            VietPost Pty Ltd, có trụ sở tại: Lot. 06 , 14-16 Belmore Road, Punchbowl NSW 2196</span>
+                        <span class="py-2 d-block">
+                            Chúng tôi cung cấp dịch vụ vận chuyển hàng từ Úc về qua các nước toàn quốc. Mang đến cho bạn
+                            lựa chọn mua sắm thoải mái và vận chuyển các mặt hàng từ các cửa hàng của Úc sang các nước
+                            với mức giá tối ưu nhất!
+                        </span>
+                        <span class="py-2 d-block">
+                            Chúng tôi khát khao mong muốn được đồng hành cùng doanh nghiệp của bạn chinh phục thị trường
+                            thế giới. Dịch vụ của chúng tôi giúp khách hàng tại toàn quốc tế nhanh chóng tiếp cận nguồn
+                            hàng hóa chất lượng cao từ Úc và mua hàng, vận chuyển xuất nhập đơn hàng toàn quốc
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 p-3 py-4">
+                    <div class="rounded bg-transparent-light p-3 h-100">
+                        <h2 class="text-yellow ff-sans-serif text-center py-3">Liên hệ với chúng tôi</h2>
+                        <form class="p-3">
+                            <input placeholder="Họ và tên" class="w-100 p-2 border-0 mb-2" style="outline: none;">
+                            <input placeholder="Địa chỉ email" class="w-100 p-2 border-0 mb-2" style="outline: none;">
+                            <input placeholder="Số điện thoại" class="w-100 p-2 border-0 mb-2" style="outline: none;">
+                            <input placeholder="Nội dung" class="w-100 p-2 border-0 mb-2" style="outline: none;">
+                            <button class="btn btn-danger ">Đăng ký ngay</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <h2 class="text-center mt-5 text-danger fw-bold ff-sans-serif">SHIROGANE EXPRESS</h2>
+    <div class="seperator-end"></div>
+    <p class=" fw-bold mt-2 text-center" style="font-size: 17px;">“Sự lựa chọn hoàn hảo nhất cho Doanh nghiệp và mọi
+        nhà”</p>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <div class="bg-danger py-5 ps-5 rounded text-light mt-4 out-screen">
+                        <p>Tầm nhìn</p>
+                        <ul>
+                            <li>Đáng tin cậy cho các doanh nghiệp thuộc mọi quy mô.</li>
+                            <li>Xây dựng mối quan hệ lâu dài với khách hàng dựa trên sự tin tưởng và tôn trọng lẫn nhau.
+                            </li>
+                            <li>Tập trung vào việc cung cấp các giải pháp chuỗi cung ứng hiệu quả và đáng tin cậy đồng
+                                thời ưu tiên sự hài lòng của khách hàng.</li>
+                        </ul>
+                        <p>Sứ mệnh</p>
+                        <ul>
+                            <li>Cung cấp cho khách hàng các giải pháp sáng tạo, hiệu quả về chi phí, đáp ứng nhu cầu vận
+                                chuyển của khách hàng.</li>
+                            <li>An toàn, bền vững và trách nhiệm xã hội.</li>
+                            <li>Chất lượng dịch vụ, sự hài lòng của khách hàng, tăng trưởng và lợi nhuận.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 ">
+                    <div style="width: 100%; height: 370px;">
+                        <img style="width: 100%; height: 100%; object-fit: cover;" src="assets/photo/info-pt.png">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mt-5 bg-gray">
+        <h2 class="text-center pt-3 text-danger fw-bold ff-sans-serif">TẠI SAO LẠI CHỌN CHÚNG TÔI?</h2>
+        <div class="seperator-end"></div>
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12 col-md-6 pb-3 ">
+                    <div class="row bg-transparent-red p-3 rounded m-1 h-100">
+                        <div class="col-2 justify-content-center">
+                            <img style="width: 100%;" src="assets/photo/icon-home-1.png">
+
+                        </div>
+
+                        <div class="col-10">
+                            <div>
+
+                                <p>🔴 <span class="fw-bold">Dịch vụ vận chuyển hàng từ Úc sang các nước quốc tế như Mỹ,
+                                        Đức,Pháp,Hungary, Việt Nam</span> , Oder hàng Úc chính hãng, dịch vụ Dropship
+                                    chuyên nghiệp giá rẻ.</p>
+                                <p>🔴 Đảm bảo chất lượng hàng hóa chính hãng, mang lại giải pháp hiệu quả, đồng thời
+                                    thỏa mãn được những mong muốn của khách hàng khi sử dụng dịch vụ của chúng tôi.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <div class="row bg-transparent-red p-2 rounded m-1">
+                        <div class="col-2 justify-content-center">
+                            <img style="width: 100%;" src="assets/photo/icon-home-2.png">
+
+                        </div>
+
+                        <div class="col-10">
+                            <div>
+
+                                <p>🔴 <span class="fw-bold">Shirogane </span> , có đủ năng lực đáp ứng mọi yêu cầu của
+                                    khách hàng cả về chất lượng dịch vụ cũng như số lượng và chất lượng hàng hóa. Giao
+                                    hàng tận nơi tại tất cả các tỉnh thành: <span class="fw-bold text-danger">Bắc –
+                                        Trung – Nam.</span></p>
+                                <p>🔴 Đảm bảo sự hoạt động liên tục và tính kịp thời về tiến độ vận chuyển hàng hóa cho
+                                    các khách hàng: cá nhân, các tổ chức, doanh nghiệp.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 pb-3 ">
+                    <div class="row bg-transparent-red p-3 rounded m-1 h-100">
+                        <div class="col-2 justify-content-center">
+                            <img style="width: 100%;" src="assets/photo/icon-home-3.png">
+
+                        </div>
+
+                        <div class="col-10">
+                            <div>
+
+                                <p>🔴 Nhân viên tận tình, chu đáo.</p>
+                                <p>🔴 Luôn đặt chữ <span class="fs-6 fw-bold text-danger">TÍN</span> và <span
+                                        class="fs-6 fw-bold text-danger">SỰ HÀI LÒNG</span> của quý khách lên hàng đầu.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 pb-3 ">
+                    <div class="row bg-transparent-red p-3 rounded m-1 h-100">
+                        <div class="col-2 justify-content-center">
+                            <img style="width: 100%;" src="assets/photo/icon-home-4.png">
+
+                        </div>
+
+                        <div class="col-10">
+                            <div>
+
+                                <p>🔴 Giá thành hợp lý.</p>
+                                <p>🔴 Hỗ trợ khách hàng <span class="fs-6 fw-bold text-danger">24/7</span>. </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <h2 class="text-center mt-5 text-danger fw-bold ff-sans-serif">Ý KIẾN CỦA KHÁCH HÀNG</h2>
+        <div class="seperator-end"></div>
+
+        <div class="container mt-4">
+            <div class="row autoplay">
+                <div class="col-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="rounded-circle overflow-hidden" style="width: 80px; height: 80px;">
+                            <img style="width: 100%; height: 100%; object-fit: cover;" src="assets/photo/dv-1.jpg">
+                        </div>
+                        <span class="text-center">Thái độ làm việc tốt, vận chuyển nhanh, giá cả hợp lý. Tôi rất hài
+                            lòng với dịch vụ ở đây và sẽ giới thiệu cho người khác</span>
+                        <b>Anh Hoàng – Thaco Quận 7</b>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="rounded-circle overflow-hidden" style="width: 80px; height: 80px;">
+                            <img style="width: 100%; height: 100%; object-fit: cover;" src="assets/photo/dv-1.jpg">
+                        </div>
+                        <span class="text-center">Thái độ làm việc tốt, vận chuyển nhanh, giá cả hợp lý. Tôi rất hài
+                            lòng với dịch vụ ở đây và sẽ giới thiệu cho người khác</span>
+                        <b>Anh Hoàng – Thaco Quận 7</b>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="rounded-circle overflow-hidden" style="width: 80px; height: 80px;">
+                            <img style="width: 100%; height: 100%; object-fit: cover;" src="assets/photo/dv-1.jpg">
+                        </div>
+                        <span class="text-center">Thái độ làm việc tốt, vận chuyển nhanh, giá cả hợp lý. Tôi rất hài
+                            lòng với dịch vụ ở đây và sẽ giới thiệu cho người khác</span>
+                        <b>Anh Hoàng – Thaco Quận 7</b>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="rounded-circle overflow-hidden" style="width: 80px; height: 80px;">
+                            <img style="width: 100%; height: 100%; object-fit: cover;" src="assets/photo/dv-1.jpg">
+                        </div>
+                        <span class="text-center">Thái độ làm việc tốt, vận chuyển nhanh, giá cả hợp lý. Tôi rất hài
+                            lòng với dịch vụ ở đây và sẽ giới thiệu cho người khác</span>
+                        <b>Anh Hoàng – Thaco Quận 7</b>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <h2 class="text-center mt-5 text-danger fw-bold ff-sans-serif">TIN TỨC CẬP NHẬT</h2>
+        <div class="seperator-end"></div>
+
+        <div class="container mt-3">
+            <div class="row autoplay2">
+                <div class="col-4 p-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="" style="width: 100%; height: 260px;">
+                            <img style="width: 100%; height: 100%; object-fit: cover;" class="img-hover"
+                                src="assets/photo/news-1.jpg">
+                        </div>
+                        <div class="p-2 text-center">
+                            <b class="text-uppercase">Bí quyết SĂN SALE trên các sàn thương mại điện tử</b>
+                            <p class="">Thời gian gần đây, xu hướng mua sắm trực tuyến đã trở nên cực kỳ phổ biến. Các
+                                sàn thương...</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-4 p-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="" style="width: 100%; height: 260px;">
+                            <img style="width: 100%; height: 100%; object-fit: cover;" class="img-hover"
+                                src="assets/photo/news-2.jpg">
+                        </div>
+                        <div class="p-2 text-center">
+                            <b class="text-uppercase">Giải pháp vận chuyển nước hoa từ Úc về Việt Nam an toàn, hiệu
+                                quả</b>
+                            <p class="">Nước hoa, với thành phần đặc biệt và quy định vận chuyển khắt khe, luôn là một
+                                bài toán khó...</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-4 p-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="" style="width: 100%; height: 260px;">
+                            <img style="width: 100%; height: 100%; object-fit: cover;" class="img-hover"
+                                src="assets/photo/news-3.jpg">
+                        </div>
+                        <div class="p-2 text-center">
+                            <b class="text-uppercase">Dịch vụ gửi hàng quốc tế từ Úc về Việt Nam chuyên nghiệp của công
+                                ty Shirogane</b>
+                            <p class="">Trong bối cảnh giao thương quốc tế ngày càng phát triển, nhu cầu gửi hàng từ Úc
+                                về Việt Nam...</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="text-center mt-5 text-danger fw-bold ff-sans-serif">ORDER HÀNG TỪ CÁC THƯƠNG HIỆU NỔI TIẾNG
+        </h2>
+        <div class="seperator-end"></div>
+
+        <div class="container mt-3">
+            <div class="row border autoplay3">
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-1.jpg">
+                </div>
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-2.jpg">
+                </div>
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-3.jpg">
+                </div>
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-4.jpg">
+                </div>
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-5.jpg">
+                </div>
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-6.jpg">
+                </div>
+
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-1.jpg">
+                </div>
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-2.jpg">
+                </div>
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-3.jpg">
+                </div>
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-4.jpg">
+                </div>
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-5.jpg">
+                </div>
+                <div class="col-2 p-4">
+                    <img style="width: 100%;" src="assets/photo/brand-6.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-3 bg-danger">
+        <div class="container">
+            <div class="row py-4 text-light">
+                <div class="col-12 col-md-4 P-2">
+                    <div class="border-bottom border-light pb-3 mb-3">
+                        <h6>VÀI DÒNG GIỚI THIỆU</h6>
+                    </div>
+                    <span>
+                        <a class="text-light text-decoration-none fw-semibold " href="#">vnshirogane.com </a> chuyên cung cấp dịch vụ Order hàng Úc và dịch vụ vận chuyển hàng hóa qua các nước như Mỹ, Đức,Pháp,Hungary, Việt Nam . Dịch vụ của chúng tôi giúp khách hàng tại Mỹ, Đức,Pháp,Hungary, Việt Nam nhanh chóng tiếp cận nguồn hàng hóa chất lượng cao từ Úc và mua hàng, vận chuyển về Việt Nam. Chúng tôi khát khao mong muốn được đồng hành cùng bạn chinh phục thị trường thế giới
+                    </span>
+                </div>
+
+                <div class="col-12 col-md-4 P-2">
+                    <div class="border-bottom border-light pb-3 mb-3">
+                        <h6>THÔNG TIN LIÊN HỆ</h6>
+                    </div>
+                    <p>
+                        <span><i class="fa-solid fa-house"></i></span>
+                    <span> Lô 03, Ngõ 222 Thanh Am, Thượng Thanh, Long Biên, Hà Nội</span>
+                    </p>
+
+                    <p>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                    <span>(+84)966.735.678</span>
+                    </p>
+
+                    <p>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                    <span> Shirogane245@gmail.com</span>
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 P-2">
+                    <div class="border-bottom border-light pb-3 mb-3">
+                        <h6>FANPAGE</h6>
+                    </div>
+                    <div class="fb-page" data-href="https://www.facebook.com/vnshirogane/?ref=embed_page" data-tabs="timeline" data-width="" data-height="120" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/vnshirogane/?ref=embed_page" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/vnshirogane/?ref=embed_page">Shirogane Express - Dịch vụ vận chuyển hàng hóa từ Úc về Việt Nam</a></blockquote></div>
+                </div>
+
+                <div class="col-12 text-center mb-5">
+                    <a class="p-2 text-light text-decoration-none fw-semibold " style="font-size: 18px;" href="#">Chính sách đền bù </a>
+                    <a class="p-2 text-light text-decoration-none fw-semibold " style="font-size: 18px;" href="#">Quy định chung </a>
+                    <a class="p-2 text-light text-decoration-none fw-semibold " style="font-size: 18px;" href="#">Hàng hóa cấm vận chuyển </a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v21.0&appId=3171742013152251"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.autoplay').slick({
+                prevArrow: false,
+                nextArrow: false,
+                dots: true,
+                slidesToShow: 3,  // Mặc định hiển thị 3 phần tử
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,  // Khi chiều rộng màn hình <= 768px
+                        settings: {
+                            slidesToShow: 1,  // Hiển thị 1 phần tử
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $('.autoplay2').slick({
+                prevArrow: false,
+                nextArrow: false,
+                dots: false,
+                slidesToShow: 3,  // Mặc định hiển thị 3 phần tử
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 768,  // Khi chiều rộng màn hình <= 768px
+                        settings: {
+                            slidesToShow: 1,  // Hiển thị 1 phần tử
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $('.autoplay3').slick({
+                prevArrow: false,
+                nextArrow: false,
+                slidesToShow: 6,  // Mặc định hiển thị 3 phần tử
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 600,
+                responsive: [
+                    {
+                        breakpoint: 768,  // Khi chiều rộng màn hình <= 768px
+                        settings: {
+                            slidesToShow: 3,  // Hiển thị 1 phần tử
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });	
+
+
+         
+    </script>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

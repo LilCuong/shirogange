@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="/assets/css/style.css" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+    
+    
+    
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+            integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <header class="py-2 shadow shadow bg-light" >
+        <div class="container d-flex justify-content-between align-items-center h-100 ">
+
+            <div class="d-flex h-100 align-items-center">
+                <a href="/index" class="h-100 menu-large">
+                    <img class="h-100" src="assets/photo/logo.png">
+                </a>
+
+
+
+
+                <div class="menu-large">
+
+                   <div class="d-flex">
+                    <ul class="nav custom-menu" style="font-size: 14px;">
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu-item "><a href="/index.html"
+                                class="text-decoration-none action-menu">Trang chủ</a></li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu-item "><a href="intro.html"
+                                class="text-decoration-none action-menu">Giối thiệu</a></li>
+                        <li class="nav-item px-3 custom-nav-item  menu-hover action-menu-item">
+                            <a class="custom-nav-link text-uppercase fw-bold text-decoration-none nav-item-text-danger action-menu"
+                                href="/service.html">Dịch vụ</a>
+                            <ul class="custom-submenu ">
+                                <li class="li-custom-submenu-link"><a class="custom-submenu-link  " href="#">Dịch vụ vận
+                                        chuyển hàng từ Úc về
+                                        Việt Nam</a></li>
+                                <li class="li-custom-submenu-link"><a class="custom-submenu-link  " href="#">Dịch vụ
+                                        Drop Ship hàng từ Úc về
+                                        Việt Nam</a></li>
+                                <li class="li-custom-submenu-link"><a class="custom-submenu-link  " href="#">Dịch vụ
+                                        Order hàng úc chính hãng
+                                        giá tốt</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu action-menu-item"><a href="/news.html"
+                                class="text-decoration-none action-menu">Tin tức</a></li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu action-menu-item"><a href="/order.html"
+                                class="text-decoration-none action-menu">Hàng order</a></li>
+                        <li class="nav-item px-3 text-uppercase fw-bold  menu-hover action-menu action-menu-item"><a href="/tracking.html"
+                                class="text-decoration-none action-menu">TRacking</a></li>
+                    </ul>
+                   </div>
+
+                </div>
+            </div>
+            <div class="search-large ">
+                <div class="d-flex">
+                    <input type="search" class="form-control rounded-0" placeholder="Tìm kiếm sản phẩm ...">
+                    <button class="btn btn-danger rounded-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="container menu-medium bg-light">
+
+            <div class="d-flex justify-content-between" style="height: 50px;">
+                <a href="/index" class="flex h-100">
+                    <img class=" h-100" src="assets/photo/logo2.png">
+                </a>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                </div>
+
+            </div>
+
+            
+
+            <div class="accordion accordion-flush bg-light" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header d-flex align-items-center justify-content-between bg-light">
+                        <a class="fs-6 text-dark text-decoration-none text-uppercase" href="#">Trang chủ</a>
+                        <button class="  collapsed custom-accordion border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fa-solid fa-bars" style="font-size: 16px;"></i>
+                          </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <ul class="list-group list-group-flush text-uppercase fw-semibold" style="font-size: 12px;">
+                            <li class="list-group-item"><a href="/index.html" class="text-dark text-decoration-none ">Trang chủ</a></li>
+                            <li class="list-group-item"><a href="/intro.html" class="text-dark text-decoration-none">Giới thiệu</a></li>
+                            <li class="list-group-item">
+                                
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <div class="accordion-header d-flex justify-content-between">
+                                        <a class="w-100 text-decoration-none text-dark" href="service.html">Dịch vụ</a>
+                                        <button class="accordion-button collapsed p-0 w-auto" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          
+                                        </button>
+                                      </div>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item border-0 fw-normal">
+                                                <a href="#" class="text-dark text-decoration-none">chuyển hàng từ Úc về
+                                                    Việt Nam</a>
+                                            </li>
+                                            <li class="list-group-item border-0 fw-normal">
+                                                <a href="#" class="text-dark text-decoration-none"> Drop Ship hàng từ Úc về
+                                                    Việt Nam</a>
+                                            </li>
+                                            <li class="list-group-item border-0 fw-normal">
+                                                <a href="#" class="text-dark text-decoration-none">Order hàng úc chính hãng
+                                                    giá tốt</a>
+                                            </li>
+                                            
+                                          </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                            </li>
+                            <li class="list-group-item"><a href="/news.html" class="text-dark text-decoration-none">Tin tức</a></li>
+                            <li class="list-group-item"><a href="/order.html" class="text-dark text-decoration-none">hàng order</a></li>
+                            <li class="list-group-item"><a href="/tracking.html" class="text-dark text-decoration-none">tracking</a></li>
+
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                
+               
+              </div>
+        </div>
+        
+        </div>
+    </header>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="d-flex">
+                    <input type="search" class="form-control rounded-0" placeholder="Tìm kiếm sản phẩm ...">
+                    <button class="btn btn-danger rounded-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+    <section class="menu-bottom bg-light ">
+        <div class="">
+            <div class="row">
+                <a href="/index.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-house fs-6"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <a href="product.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-truck-fast fs-6"></i>
+                    <span>Nhập hàng</span>
+                </a>
+                <a href="/room.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-circle-plus fs-6"></i>
+                    <span>Xuất hàng</span>
+                </a>
+                <a href="account.html" class="menu-bottom-item col-3 p-3 d-flex justify-content-center align-items-center flex-column text-decoration-none text-dark fw-semibold" style="font-size: 12px;">
+                    
+                    <i class="fa-solid fa-circle-user fs-6"></i>
+                    <span>Tài khoản</span>
+                </a>    
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-3">
+        <div class="container custom-container">
+            <div class="d-flex justify-content-between p-2 rounded shadow-sm border border-light-subtle">
+                <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-stopwatch fs-5 me-1"></i>
+                    <span class="fw-semibold">Đơn hàng kế tiếp</span>
+                    <h5 class="text-danger m-0 px-1">100</h5>
+                    <span class="fw-semibold">s</span>
+                </div>
+
+                <div>
+                    <span>Mã đơn hàng: </span>
+                    <span class="fw-semibold text-danger">#00000</span>
+                </div>
+            </div>
+
+            <h6 class="mt-3 text-center">SẢN PHẨM ĐÁNH GIÁ THƯƠNG MẠI ĐIỆN TỬ</h6>
+
+            <div class="btn-group col-12 p-1 px-4 " role="group"
+						aria-label="Basic checkbox toggle button group">
+						<input type="checkbox" class="btn-check" id="a" autocomplete="off" > <label
+							class="btn btn-outline-secondary rounded-pill" for="a" onclick="updateSelection()">
+							<p class="m-1">Sản phẩm 1</p>
+
+						</label>
+					</div>
+                    <div class="btn-group col-12 p-1 px-4 " role="group"
+						aria-label="Basic checkbox toggle button group">
+						<input type="checkbox" class="btn-check" id="b" autocomplete="off" > <label
+							class="btn btn-outline-secondary rounded-pill" for="b" onclick="updateSelection()">
+							<p class="m-1">Sản phẩm 2</p>
+
+						</label>
+					</div>
+                    <div class="btn-group col-12 p-1 px-4 " role="group"
+						aria-label="Basic checkbox toggle button group">
+						<input type="checkbox" class="btn-check" id="c" autocomplete="off" > <label
+							class="btn btn-outline-secondary rounded-pill" for="c" onclick="updateSelection()">
+							<p class="m-1">Sản phẩm 3</p>
+
+						</label>
+					</div>
+                    <div class="btn-group col-12 p-1 px-4 " role="group"
+						aria-label="Basic checkbox toggle button group">
+						<input type="checkbox" class="btn-check" id="d" autocomplete="off" > <label
+							class="btn btn-outline-secondary rounded-pill" for="d" onclick="updateSelection()">
+							<p class="m-1">Sản phẩm 4</p>
+
+						</label>
+					</div>
+
+        </div>
+    </section>
+
+
+    <div class="offcanvas offcanvas-bottom canvas" style="height:auto; margin-bottom: 66px; z-index: 99;" data-bs-scroll="true"
+					data-bs-backdrop="false" tabindex="-1" id="offcanvasBottom"
+					aria-labelledby="offcanvasBottomLabel">
+					<div class="offcanvas-header ">
+					
+						<div class="container custom-container ">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span style="font-size: 12px;">Đã lựa chọn:</span>
+                                    <br>
+                                    <span class="fw-semibold text-uppercase" id="selected-items">A</span>
+                                </div>
+                                <div>
+                                    <span>Chọn</span>
+                                    <span class="fw-semibold" id="selected-count">2</span>
+                                    <span>ô</span>
+                                </div>
+                                <div>
+                                    <span style="font-size: 12px;">Tổng số tiền</span>
+                                    <br>
+                                    <span class="fw-semibold" id="total-amount"></span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span>số dư khả dụng: </span>
+                                <span class="text-primary fw-semibold fs-5">000000VND</span>
+                            </div>
+
+                            <form class="mt-3">
+                                <div class="mb-1">
+                                    <label class="form-label">Nhập số tiền:</label>
+                                    <input type="number" class="form-control" id="amount">
+                                  </div>
+
+                                  <button class="btn btn-primary w-100">Đánh giá</button>
+                            </form>
+                        </div>
+						
+					</div>
+					<!-- <div class="offcanvas-body small pt-0">
+						
+					</div> -->
+				</div>
+
+                <script>
+
+                    
+document.addEventListener('DOMContentLoaded', () => {
+    const checkboxes = document.querySelectorAll('.btn-check');
+    const offcanvasBottom = new bootstrap.Offcanvas(document.getElementById('offcanvasBottom'));
+    const amountInput = document.getElementById('amount');
+    let selectedCount = 0; // Biến để theo dõi số lượng checkbox đã chọn
+    const selectedItems = [];
+
+   
+    // Hàm cập nhật trạng thái của checkbox
+    const updateSelection = () => {
+        selectedCount = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
+
+        selectedItems.length = 0; // Làm sạch mảng trước khi cập nhật
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                selectedItems.push(checkbox.id); // Lưu ID của checkbox đã chọn
+            }
+        });
+
+        document.getElementById('selected-items').textContent = selectedItems.join(', ');
+        document.getElementById('selected-count').textContent = selectedCount;
+
+
+        const amount = parseFloat(amountInput.value) || 0; // Lấy số tiền đánh giá từ input
+        const totalAmount = amount * selectedCount; // Tính tổng số tiền
+        const formattedAmount = totalAmount.toLocaleString();
+
+        document.getElementById('total-amount').textContent = formattedAmount + " VND";
+
+        // Nếu đã chọn 2 checkbox, disable các checkbox còn lại
+        checkboxes.forEach(checkbox => {
+            if (selectedCount >= 2 && !checkbox.checked) {
+                checkbox.disabled = true;
+            } else {
+                checkbox.disabled = false;
+            }
+        });
+
+        // Hiển thị offcanvas nếu có checkbox được chọn
+        if (selectedCount > 0) {
+            offcanvasBottom.show();
+        }
+    };
+
+    // Gắn sự kiện onchange cho các checkbox
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateSelection);
+    });
+    amountInput.addEventListener('input', updateSelection);
+});
+
+                </script>
+
+
+    
+
+<script>
+   const stars = document.querySelectorAll('.rating-form i');
+
+stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+        // Reset tất cả sao
+        stars.forEach((s, i) => {
+            s.classList.remove('selected', 'blink', 'fa-solid', 'fa-regular');
+            s.classList.add('fa-regular'); // Đặt lại trạng thái rỗng
+            if (i <= index) {
+                s.classList.add('selected', 'fa-solid'); // Đổi biểu tượng thành solid và tô màu
+            }
+        });
+
+        // Thêm hiệu ứng blink vào sao được click
+        star.classList.add('blink');
+    });
+});
+
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>
